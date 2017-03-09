@@ -9,7 +9,7 @@ console.log(process.env.NODE_ENV);
 
 ReactDOM.render(
     <h1>
-        Hello World !!
+        Hello From React !!
     </h1>,
     content
 );
