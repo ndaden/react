@@ -15,8 +15,8 @@ module.exports = {
     module:{
         loaders:[
             {
-                test: /\.js$/, //which files to compile
-                exclude: [/node_modules/,/front/], //excluded directories
+                test: [/\.jsx?$/], //which files to compile
+                exclude: [/node_modules/], //excluded directories
                 loader: 'babel-loader' //loader to use
             }
         ]

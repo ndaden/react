@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 module.exports = {
     //main app file
-    entry: './front/app.js',
+    entry: './front/main.jsx',
     output: {
         path: 'front/static/js',
         filename: 'bundle.js'
@@ -12,7 +12,7 @@ module.exports = {
     module:{
         loaders:[
             {
-                test: /\.js$/, //which files to compile
+                test: /\.jsx$/, //which files to compile
                 exclude: [/node_modules/,/server/], //excluded directories
                 loader: 'babel-loader' //loader to use
             }
